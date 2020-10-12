@@ -1,13 +1,20 @@
 //Fonts
-$font-primary:  Arial, sans-serif;
+$font-primary: Arial, sans-serif;
+$font-secondary: Arial, sans-serif;
 
 // Colors
 $black: #000;
 $white: #fff;
+$gray: #585c60;
+$color-primary: #2e5470;
+$color-secondary: #56bcbb;
+
 
 $site-colors: (
 	'black': $black,
-	'white': $white
+	'white': $white,
+	'color-primary': $color-primary,
+	'color-secondary': $color-secondary
 ) !default;
 
 

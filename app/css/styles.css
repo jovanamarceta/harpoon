@@ -10,6 +10,18 @@
 .color-white {
   color: #fff; }
 
+.bg-color-primary {
+  background-color: #2e5470; }
+
+.color-color-primary {
+  color: #2e5470; }
+
+.bg-color-secondary {
+  background-color: #56bcbb; }
+
+.color-color-secondary {
+  color: #56bcbb; }
+
 * {
   box-sizing: border-box; }
   *::before, *::after {
@@ -50,12 +62,24 @@ a:active {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: Arial, sans-serif;
   text-transform: uppercase; }
+
+h2, .h2 {
+  font-size: 50px;
+  line-height: 50px;
+  color: #2e5470; }
+
+h3, .h3 {
+  font-size: 30px;
+  line-height: 50px;
+  color: Arial, sans-serif; }
 
 body {
   font-size: 16px;
+  line-height: 35px;
   font-family: Arial, sans-serif;
-  color: #000; }
+  color: #585c60; }
 
 .row {
   max-width: 1140px;
