@@ -16,9 +16,18 @@
 .flex-end {
 	display: flex;
 	justify-content: flex-end;
+	@media only screen and (max-width: $md) {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 .center {
 	text-align: center;
 }
 
+.in-front {
+	position: relative;
+	z-index: 100;
+}

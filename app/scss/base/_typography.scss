@@ -12,11 +12,20 @@ h1, .h1 {
 h2, .h2 {
 	font-size: 50px;
 	line-height: 50px;
-	color: $color-primary;
+	color: $white;
 }
 
 h3, .h3 {
 	font-size: 30px;
 	line-height: 50px;
 	color: $font-secondary;
+}
+
+.section-title::after {
+	content: '';
+	display: block;
+	height: 4px;
+	width: 300px;
+	background-color: $color-secondary;
+	margin: 20px 0 140px;
 }

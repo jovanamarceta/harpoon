@@ -1,0 +1,44 @@
+.investors {
+	position: relative;
+	padding: 90px 0 0 0;
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background: rgba($blue-dark, .9);
+	}
+}
+.investors__content {
+	margin-bottom: 130px;
+	@media only screen and (max-width: $sm) {
+		text-align: center;
+	}
+}
+.investors__heading {
+	color: $white;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.investors__description {
+	color: $color-secondary;
+	font-size: 30px;
+	font-family: $font-primary;
+	margin-bottom: 20px;
+}
+
+#logo1 {
+	margin-bottom: 40px;
+}
+
+#logo2 {
+	margin-right: 30px;
+	@media only screen and (max-width: $sm) {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
