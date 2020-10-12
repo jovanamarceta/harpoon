@@ -1,17 +1,18 @@
 .investors {
-	position: relative;
-	padding: 90px 0 0 0;
-	&::after {
-		content: "";
-		display: block;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		position: absolute;
-		background: rgba($blue-dark, .9);
-	}
+		position: relative;
+		padding: 90px 0 0 0;
+		&::after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			background: rgba($blue-dark, 0.9);
+		}
 }
+
 .investors__content {
 	margin-bottom: 130px;
 	@media only screen and (max-width: $sm) {
@@ -19,7 +20,7 @@
 	}
 }
 .investors__heading {
-	color: $white;
+	color: #fff;
 	font-weight: bold;
 	margin-bottom: 30px;
 }
@@ -42,3 +43,4 @@
 		margin-bottom: 30px;
 	}
 }
+	

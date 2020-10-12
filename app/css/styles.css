@@ -22,6 +22,12 @@
 .color-color-secondary {
   color: #56bcbb; }
 
+.bg-blue-dark {
+  background-color: #12202d; }
+
+.color-blue-dark {
+  color: #12202d; }
+
 * {
   box-sizing: border-box; }
   *::before, *::after {
@@ -76,7 +82,8 @@ a:active {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Futura Std", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 
 h1, .h1 {
   font-size: 85px;
@@ -98,7 +105,7 @@ h3, .h3 {
   height: 4px;
   width: 300px;
   background-color: #56bcbb;
-  margin: 20px 0 140px; }
+  margin: 20px 0 100px; }
 
 @font-face {
   font-family: 'Futura Std';
@@ -348,3 +355,34 @@ body {
     #logo2 {
       margin-right: 0;
       margin-bottom: 30px; } }
+
+.about {
+  position: relative;
+  padding: 90px 0 325px; }
+  @media only screen and (max-width: 768px) {
+    .about {
+      padding: 90px 0 100px; } }
+
+.about__title,
+.about__heading {
+  color: #2e5470; }
+
+.about__content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between; }
+  @media only screen and (max-width: 768px) {
+    .about__content {
+      display: block; } }
+
+.about__box-left {
+  max-width: 683px; }
+
+.about__img {
+  position: absolute;
+  height: 800px;
+  top: 75px;
+  right: 0; }
+  @media only screen and (max-width: 768px) {
+    .about__img {
+      display: none; } }

@@ -8,7 +8,6 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 
-
 // Colors
 $black: #000;
 $white: #fff;
@@ -22,7 +21,8 @@ $site-colors: (
 	'black': $black,
 	'white': $white,
 	'color-primary': $color-primary,
-	'color-secondary': $color-secondary
+	'color-secondary': $color-secondary,
+	'blue-dark': $blue-dark
 ) !default;
 
 

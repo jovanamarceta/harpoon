@@ -2,6 +2,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: $font-primary;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 h1, .h1 {
@@ -27,5 +28,5 @@ h3, .h3 {
 	height: 4px;
 	width: 300px;
 	background-color: $color-secondary;
-	margin: 20px 0 140px;
+	margin: 20px 0 100px;
 }
