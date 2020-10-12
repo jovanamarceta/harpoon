@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6,
   text-transform: uppercase; }
 
 h1, .h1 {
-  font-size: 70px;
+  font-size: 85px;
   color: #fff; }
 
 h2, .h2 {
@@ -141,7 +141,7 @@ body {
   font-family: "Futura Std", sans-serif;
   border: 2px solid #56bcbb;
   background-color: transparent;
-  padding: 10px 60px; }
+  padding: 5px 66px; }
   .button:hover {
     background-color: #56bcbb;
     border: 2px solid #2e5470; }
@@ -221,6 +221,21 @@ body {
   .scroll-indicator-controller > div span {
     transition: opacity 0.4s ease; } }
 
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #fff;
+  width: 27px; }
+
+.arrow-down::before {
+  content: "\f107"; }
+
 .banner {
   position: relative;
   height: 100vh;
@@ -251,6 +266,23 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 4; }
+
+.banner__title-img {
+  width: 100%; }
+
+.banner__info {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-family: "Futura Std", sans-serif; }
+  .banner__info-name, .banner__info-mail {
+    font-size: 30px;
+    line-height: 50px; }
+  .banner__info-name {
+    text-transform: uppercase; }
 
 .footer {
   padding: 15px 0; }
