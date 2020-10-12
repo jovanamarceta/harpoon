@@ -62,7 +62,7 @@ a:active {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: Arial, sans-serif;
+  font-family: "Futura Std", sans-serif;
   text-transform: uppercase; }
 
 h2, .h2 {
@@ -73,12 +73,47 @@ h2, .h2 {
 h3, .h3 {
   font-size: 30px;
   line-height: 50px;
-  color: Arial, sans-serif; }
+  color: "Open Sans", Arial, sans-serif; }
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url("/app/fonts/FuturaStd-CondensedBold.woff2") format("woff2"), url("/app/fonts/FuturaStd-CondensedBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url("/app/fonts/FuturaStd-Condensed.woff") format("woff2"), url("/app/fonts/FuturaStd-Condensed.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/app/fonts/OpenSans-Regular.woff2") format("woff2"), url("/app/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/app/fonts/OpenSans.woff") format("woff2"), url("/app/fonts/OpenSans.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/app/OpenSans-Italic.woff2") format("woff2"), url("/app/OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
 
 body {
   font-size: 16px;
   line-height: 35px;
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #585c60; }
 
 .row {
