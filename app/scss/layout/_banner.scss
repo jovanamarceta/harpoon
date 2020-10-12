@@ -1,0 +1,35 @@
+.banner {
+	position: relative;
+	height: 100vh;
+	padding: 50px 0 0 0;
+	&::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background: rgba($blue-dark, .9);
+	}
+	&::after {
+		content: "";
+		background: linear-gradient(to right top, rgba($green-dark, .5) 50%, transparent 50%);
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		z-index: 3;
+		top: 0%;
+	}
+}
+
+.banner__title {
+	position: absolute;
+	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 4;
+}
+
