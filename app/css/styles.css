@@ -11,10 +11,10 @@
   color: #fff; }
 
 .bg-color-primary {
-  background-color: #2e5470; }
+  background-color: #020202; }
 
 .color-color-primary {
-  color: #2e5470; }
+  color: #020202; }
 
 .bg-color-secondary {
   background-color: #56bcbb; }
@@ -40,6 +40,9 @@ li {
   list-style: none; }
 
 a {
+  text-decoration: none; }
+
+a:hover {
   text-decoration: none; }
 
 p {
@@ -168,7 +171,7 @@ body {
   padding: 5px 66px; }
   .button:hover {
     background-color: #56bcbb;
-    border: 2px solid #2e5470; }
+    border: 2px solid transparent; }
 
 .scroll-indicator-controller {
   position: fixed;
@@ -365,7 +368,7 @@ body {
 
 .about__title,
 .about__heading {
-  color: #2e5470; }
+  color: #020202; }
 
 .about__content {
   display: flex;
@@ -386,3 +389,35 @@ body {
   @media only screen and (max-width: 768px) {
     .about__img {
       display: none; } }
+
+.portfolio {
+  position: relative;
+  padding: 90px 0 100px 0; }
+  .portfolio::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(18, 32, 45, 0.9); }
+
+.portfolio__box {
+  border: 1px solid #4d555c;
+  padding: 30px;
+  background: rgba(30, 43, 56, 0.6); }
+
+.portfolio__heading {
+  margin: 0 auto; }
+
+.portfolio__box-small {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 35px;
+  color: #56bcbb;
+  margin-bottom: 40px; }
+
+.portfolio__box-text {
+  line-height: 35px;
+  margin-bottom: 25px; }

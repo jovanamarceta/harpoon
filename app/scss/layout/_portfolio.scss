@@ -1,0 +1,37 @@
+.portfolio {
+	position: relative;
+	padding: 90px 0 100px 0;
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background: rgba($blue-dark, 0.9);
+	}
+}
+
+.portfolio__box {
+	border: 1px solid $gray-300;
+	padding: 30px;
+	background: rgba(#1e2b38, .6);
+}
+.portfolio__heading {
+	margin: 0 auto;
+}
+
+.portfolio__box-small {
+	font-size: 16px;
+	font-style: italic;
+	line-height: 35px;
+	color: $color-secondary;
+	margin-bottom: 40px;
+}
+
+.portfolio__box-text {
+	line-height: 35px;
+	margin-bottom: 25px;
+}
+
