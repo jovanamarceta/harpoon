@@ -1,0 +1,89 @@
+.scroll-indicator-controller {
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 20px;
+	z-index: 2;
+	@media (max-width: 1024px) {
+		.scroll-indicator-controller {
+			right: 10px;
+		}
+	}
+}
+
+.scroll-indicator-controller > div {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	border-radius: 50%;
+	background: #fff;
+	margin: 0 0 10px 0;
+	cursor: pointer;
+	transition: background 0.4s ease;
+	will-change: transition;
+}
+
+.scroll-indicator-controller > div span {
+	color: white;
+	position: absolute;
+	right: calc(100% + 8px);
+	white-space: nowrap;
+	top: -1px;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	line-height: 17px;
+	width: 0;
+	overflow: hidden;
+	opacity: 0;
+	transform: translateX(10px);
+	transition: all 0.4s ease;
+	will-change: transition;
+	color: #464646;
+	font-weight: 600;
+}
+.scroll-indicator-controller > div span:after {
+	content: "-----";
+	padding-left: 5px;
+	letter-spacing: -2px;
+	font-family: arial, sans-serif;
+	vertical-align: text-top;
+	font-weight: 400;
+}
+
+@media (hover: hover) {
+	.scroll-indicator-controller > div:hover span {
+		width: auto;
+		opacity: 1;
+		overflow: visible;
+		transform: translateX(0px);
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.scroll-indicator-controller > div:hover span {
+		width: auto;
+		opacity: 1;
+		overflow: visible;
+		transform: translateX(0px);
+	}
+}
+
+@media (hover: none) {
+	.scroll-indicator-controller > div span {
+	display: none;
+	}
+}
+
+.scroll-indicator-controller.indi-mobile > div span {
+display: none;
+}
+
+.scroll-indicator-controller > div.active {
+	background: #8bc6c4;
+}
+
+@supports (-ms-ime-align:auto) {
+.scroll-indicator-controller > div span {
+	transition: opacity 0.4s ease;
+}
+}
