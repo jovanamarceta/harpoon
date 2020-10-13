@@ -3,6 +3,9 @@ body {
 	line-height: 35px;
 	font-family: $font-secondary;
 	color: $gray;
+	@media (max-width: $sm) {
+		font-size: 14px;
+	}
 }
 
 .row {

@@ -2,22 +2,25 @@
 	position: fixed;
 	top: 50%;
 	transform: translate(0, -50%);
-	right: 20px;
+	right: 50px;
 	z-index: 2;
 	@media (max-width: 1024px) {
 		.scroll-indicator-controller {
 			right: 10px;
 		}
 	}
+	@media only screen and (max-width: $md) {
+		right: 10px;
+	}
 }
 
 .scroll-indicator-controller > div {
-	width: 20px;
-	height: 20px;
+	width: 12px;
+	height: 12px;
 	position: relative;
 	border-radius: 50%;
-	background: #fff;
-	margin: 0 0 10px 0;
+	background: $white;
+	margin: 0 0 25px 0;
 	cursor: pointer;
 	transition: background 0.4s ease;
 	will-change: transition;
@@ -41,6 +44,7 @@
 	color: #464646;
 	font-weight: 600;
 }
+
 .scroll-indicator-controller > div span:after {
 	content: "-----";
 	padding-left: 5px;

@@ -96,6 +96,9 @@ h2, .h2 {
   font-size: 50px;
   line-height: 50px;
   color: #fff; }
+  @media (max-width: 576px) {
+    h2, .h2 {
+      font-size: 34px; } }
 
 h3, .h3 {
   font-size: 30px;
@@ -109,6 +112,10 @@ h3, .h3 {
   width: 300px;
   background-color: #56bcbb;
   margin: 24px 0 124px; }
+  @media only screen and (max-width: 576px) {
+    .section-title::after {
+      width: 100%;
+      margin-bottom: 50px; } }
 
 @font-face {
   font-family: 'Futura Std';
@@ -150,6 +157,9 @@ body {
   line-height: 35px;
   font-family: "Open Sans", Arial, sans-serif;
   color: #585c60; }
+  @media (max-width: 576px) {
+    body {
+      font-size: 14px; } }
 
 .row {
   max-width: 1170px;
@@ -174,23 +184,36 @@ body {
     border: 2px solid transparent;
     transition: all  .7s ease-in; }
 
+.button--secondary {
+  padding: 12px 55px; }
+  .button--secondary:hover {
+    color: #fff;
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; }
+
 .scroll-indicator-controller {
   position: fixed;
   top: 50%;
   transform: translate(0, -50%);
-  right: 20px;
+  right: 50px;
   z-index: 2; }
   @media (max-width: 1024px) {
     .scroll-indicator-controller .scroll-indicator-controller {
       right: 10px; } }
+  @media only screen and (max-width: 768px) {
+    .scroll-indicator-controller {
+      right: 10px; } }
 
 .scroll-indicator-controller > div {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin: 0 0 10px 0;
+  margin: 0 0 25px 0;
   cursor: pointer;
   transition: background 0.4s ease;
   will-change: transition; }
@@ -319,10 +342,13 @@ body {
   margin: 0 auto;
   font-size: 14px;
   line-height: 35px; }
+  @media only screen and (max-width: 576px) {
+    .footer__text {
+      text-align: center; } }
 
 .investors {
   position: relative;
-  padding: 96px 0 0 0; }
+  padding: 96px 0 6px 0; }
   .investors::after {
     content: "";
     display: block;
@@ -332,6 +358,9 @@ body {
     left: 0;
     position: absolute;
     background: rgba(18, 32, 45, 0.9); }
+  @media only screen and (max-width: 576px) {
+    .investors {
+      padding: 26px 0 6px; } }
 
 .investors__content {
   margin-bottom: 136px; }
@@ -366,13 +395,16 @@ body {
   @media only screen and (max-width: 768px) {
     .about {
       padding: 90px 0 100px; } }
+  @media only screen and (max-width: 576px) {
+    .about {
+      padding: 26px 0 100px; } }
 
 .about__title,
 .about__heading {
   color: #2e5470; }
 
 .about__heading {
-  margin-bottom: 30px; }
+  margin-bottom: 34px; }
 
 .about__content {
   display: flex;
@@ -380,7 +412,8 @@ body {
   justify-content: space-between; }
   @media only screen and (max-width: 768px) {
     .about__content {
-      display: block; } }
+      display: block;
+      text-align: center; } }
 
 .about__box-left {
   max-width: 683px; }
@@ -406,36 +439,64 @@ body {
     left: 0;
     position: absolute;
     background: rgba(18, 32, 45, 0.9); }
+  @media only screen and (max-width: 576px) {
+    .portfolio {
+      padding: 26px 0 100px; } }
 
 .portfolio__box {
-  border: 1px solid #4d555c;
   padding: 30px;
-  background: rgba(30, 43, 56, 0.6);
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  height: 400px; }
+  .portfolio__box:hover {
+    animation: all .9s ease-out;
+    background: rgba(30, 43, 56, 0.6);
+    border: 1px solid #4d555c; }
+  @media only screen and (min-width: 992px) {
+    .portfolio__box {
+      transform: scale(0.8); } }
+  @media only screen and (max-width: 768px) {
+    .portfolio__box {
+      padding: 10px; } }
+  @media only screen and (max-width: 576px) {
+    .portfolio__box {
+      padding: 5px; } }
+
+.portfolio__img {
+  margin-bottom: 8px; }
 
 .portfolio__heading {
   margin: 0 auto;
   text-align: center; }
 
 .portfolio__box-small {
-  font-size: 16px;
   font-style: italic;
   line-height: 35px;
   color: #56bcbb;
-  margin-bottom: 40px; }
+  margin-bottom: 34px; }
+  .portfolio__box-small span {
+    font-size: 16px; }
 
 .portfolio__box-text {
   line-height: 35px;
-  margin-bottom: 25px; }
+  margin-bottom: 24px; }
 
 .advisors {
   padding: 96px 0 0;
   position: relative; }
   .advisors h2 {
     color: #2e5470; }
+    @media only screen and (max-width: 576px) {
+      .advisors h2 {
+        text-align: center; } }
+  @media only screen and (max-width: 768px) {
+    .advisors {
+      padding: 96px 0 100px; } }
+  @media only screen and (max-width: 576px) {
+    .advisors {
+      padding: 26px 0 20px; } }
 
 .advisors__title {
-  margin-bottom: 85px; }
+  margin-bottom: 96px; }
   @media only screen and (max-width: 768px) {
     .advisors__title {
       margin: 0 auto 80px auto; } }
@@ -460,7 +521,7 @@ body {
 
 .advisors__person-img {
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 23px;
   width: 180px;
   height: 180px;
   object-fit: cover; }
@@ -476,11 +537,14 @@ body {
   text-transform: capitalize;
   color: #56bcbb;
   font-weight: 500;
-  line-height: 1px; }
+  line-height: 24px; }
+
+.advisors__item {
+  line-height: 25px; }
 
 .advisors__item::before {
   content: '.';
-  width: 20px;
+  width: 28px;
   color: #2e5470;
   display: inline-block;
   font-size: 40px; }

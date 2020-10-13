@@ -11,29 +11,54 @@
 		position: absolute;
 		background: rgba($blue-dark, 0.9);
 	}
+	@media only screen and (max-width: $sm) {
+		padding: 26px 0 100px;
+	}
 }
 
 .portfolio__box {
-	border: 1px solid $gray-300;
 	padding: 30px;
-	background: rgba(#1e2b38, .6);
 	margin-bottom: 20px;
+	height: 400px;
+	&:hover {
+		animation: all .9s ease-out;
+		background: rgba(#1e2b38, .6);
+		border: 1px solid $gray-300;
+	}
+	@media only screen and (min-width: $lg) {
+		transform: scale(0.8);
+	}
+	@media only screen and (max-width: $md) {
+		padding: 10px;
+	}
+	@media only screen and (max-width: $sm) {
+		padding: 5px;
+	}
 }
+
+.portfolio__img {
+	margin-bottom: 8px;
+}
+
 .portfolio__heading {
 	margin: 0 auto;
 	text-align: center;
 }
 
 .portfolio__box-small {
-	font-size: 16px;
 	font-style: italic;
 	line-height: 35px;
 	color: $color-secondary;
-	margin-bottom: 40px;
+	margin-bottom: 34px;
+	span {
+		font-size: 16px;
+	}
 }
 
 .portfolio__box-text {
 	line-height: 35px;
-	margin-bottom: 25px;
+	margin-bottom: 24px;
+
 }
+
 

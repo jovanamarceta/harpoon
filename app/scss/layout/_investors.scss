@@ -1,16 +1,19 @@
 .investors {
-		position: relative;
-		padding: 96px 0 0 0;
-		&::after {
-			content: "";
-			display: block;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			position: absolute;
-			background: rgba($blue-dark, 0.9);
-		}
+	position: relative;
+	padding: 96px 0 6px 0;
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background: rgba($blue-dark, 0.9);
+	}
+	@media only screen and (max-width: $sm) {
+		padding: 26px 0 6px;
+	}
 }
 
 .investors__content {
