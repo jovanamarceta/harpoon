@@ -177,6 +177,30 @@ body {
     border: 2px solid transparent;
     transition: all  .7s ease-in; }
 
+.button-primary {
+  position: relative; }
+
+.button-primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, #56bcbb 50%, transparent 50%);
+  z-index: -1; }
+
+.button-primary,
+.button-primary:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 1s, font-size 0.2s; }
+
+.button-primary:hover,
+.button-primary:hover:after {
+  background-position: 0;
+  color: #fff; }
+
 .button--secondary {
   padding: 12px 55px; }
   .button--secondary:hover {
