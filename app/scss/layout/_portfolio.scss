@@ -24,9 +24,9 @@
 		animation: all .9s ease-out;
 		background: rgba(#1e2b38, .6);
 		border: 1px solid $gray-300;
-	}
-	@media only screen and (min-width: $lg) {
-		transform: scale(0.8);
+		@media only screen and (min-width: $lg) {
+			transform: scale(0.8);
+		}
 	}
 	@media only screen and (max-width: $md) {
 		padding: 10px;
