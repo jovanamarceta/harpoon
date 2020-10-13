@@ -152,13 +152,6 @@ h3, .h3 {
   font-style: italic;
   font-display: swap; }
 
-@font-face {
-  font-family: 'Sansita Swashed';
-  src: url("/app/fonts/SansitaSwashed-Light.woff2") format("woff2"), url("/app/fonts/SansitaSwashed-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
 body {
   font-size: 16px;
   line-height: 35px;
