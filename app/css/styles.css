@@ -119,35 +119,28 @@ h3, .h3 {
 
 @font-face {
   font-family: 'Futura Std';
-  src: url("/app/fonts/FuturaStd-CondensedBold.woff2") format("woff2"), url("/app/fonts/FuturaStd-CondensedBold.woff") format("woff");
+  src: url("../../fonts/FuturaStd-CondensedBold.woff2") format("woff2"), url("../../app/fonts/FuturaStd-CondensedBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Futura Std';
-  src: url("/app/fonts/FuturaStd-Condensed.woff") format("woff2"), url("/app/fonts/FuturaStd-Condensed.woff") format("woff");
+  src: url("../../fonts/FuturaStd-Condensed.woff") format("woff2"), url("../../fonts/FuturaStd-Condensed.woff") format("woff"), url("../../fonts/Futura Std Bold Condensed.otf") format("otf");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("/app/fonts/OpenSans-Regular.woff2") format("woff2"), url("/app/fonts/OpenSans-Regular.woff") format("woff");
+  src: url("../../fonts/OpenSans.woff2") format("woff2"), url("../../fonts/OpenSans.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("/app/fonts/OpenSans.woff") format("woff2"), url("/app/fonts/OpenSans.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("/app/OpenSans-Italic.woff2") format("woff2"), url("/app/OpenSans-Italic.woff") format("woff");
+  src: url("../../fonts/OpenSans-Italic.woff2") format("woff2"), url("../../fonts/OpenSans-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap; }
