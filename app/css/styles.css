@@ -152,6 +152,13 @@ h3, .h3 {
   font-style: italic;
   font-display: swap; }
 
+@font-face {
+  font-family: 'Sansita Swashed';
+  src: url("/app/fonts/SansitaSwashed-Light.woff2") format("woff2"), url("/app/fonts/SansitaSwashed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
 body {
   font-size: 16px;
   line-height: 35px;
@@ -319,7 +326,9 @@ body {
   z-index: 4; }
 
 .banner__title-img {
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  z-index: 100; }
 
 .banner__info {
   position: absolute;
@@ -451,9 +460,9 @@ body {
     animation: all .9s ease-out;
     background: rgba(30, 43, 56, 0.6);
     border: 1px solid #4d555c; }
-  @media only screen and (min-width: 992px) {
-    .portfolio__box {
-      transform: scale(0.8); } }
+    @media only screen and (min-width: 992px) {
+      .portfolio__box:hover {
+        transform: scale(0.8); } }
   @media only screen and (max-width: 768px) {
     .portfolio__box {
       padding: 10px; } }
