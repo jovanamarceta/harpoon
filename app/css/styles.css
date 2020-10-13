@@ -108,7 +108,7 @@ h3, .h3 {
   height: 4px;
   width: 300px;
   background-color: #56bcbb;
-  margin: 20px 0 100px; }
+  margin: 24px 0 124px; }
 
 @font-face {
   font-family: 'Futura Std';
@@ -168,10 +168,11 @@ body {
   font-family: "Futura Std", sans-serif;
   border: 2px solid #56bcbb;
   background-color: transparent;
-  padding: 5px 66px; }
+  padding: 5px 71px; }
   .button:hover {
     background-color: #56bcbb;
-    border: 2px solid transparent; }
+    border: 2px solid transparent;
+    transition: all  .7s ease-in; }
 
 .scroll-indicator-controller {
   position: fixed;
@@ -256,7 +257,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 20px;
+  font-size: 34px;
   color: #fff;
   width: 27px; }
 
@@ -288,7 +289,7 @@ body {
 .banner__title {
   position: absolute;
   margin: 0 auto;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -321,7 +322,7 @@ body {
 
 .investors {
   position: relative;
-  padding: 90px 0 0 0; }
+  padding: 96px 0 0 0; }
   .investors::after {
     content: "";
     display: block;
@@ -333,7 +334,7 @@ body {
     background: rgba(18, 32, 45, 0.9); }
 
 .investors__content {
-  margin-bottom: 130px; }
+  margin-bottom: 136px; }
   @media only screen and (max-width: 576px) {
     .investors__content {
       text-align: center; } }
@@ -341,13 +342,13 @@ body {
 .investors__heading {
   color: #fff;
   font-weight: bold;
-  margin-bottom: 30px; }
+  margin-bottom: 39px; }
 
 .investors__description {
   color: #56bcbb;
   font-size: 30px;
   font-family: "Futura Std", sans-serif;
-  margin-bottom: 20px; }
+  margin-bottom: 15px; }
 
 #logo1 {
   margin-bottom: 40px; }
@@ -361,14 +362,17 @@ body {
 
 .about {
   position: relative;
-  padding: 90px 0 325px; }
+  padding: 96px 0 296px; }
   @media only screen and (max-width: 768px) {
     .about {
       padding: 90px 0 100px; } }
 
 .about__title,
 .about__heading {
-  color: #020202; }
+  color: #2e5470; }
+
+.about__heading {
+  margin-bottom: 30px; }
 
 .about__content {
   display: flex;
@@ -392,7 +396,7 @@ body {
 
 .portfolio {
   position: relative;
-  padding: 90px 0 100px 0; }
+  padding: 96px 0 100px 0; }
   .portfolio::after {
     content: "";
     display: block;
@@ -406,10 +410,12 @@ body {
 .portfolio__box {
   border: 1px solid #4d555c;
   padding: 30px;
-  background: rgba(30, 43, 56, 0.6); }
+  background: rgba(30, 43, 56, 0.6);
+  margin-bottom: 20px; }
 
 .portfolio__heading {
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 .portfolio__box-small {
   font-size: 16px;
@@ -421,3 +427,60 @@ body {
 .portfolio__box-text {
   line-height: 35px;
   margin-bottom: 25px; }
+
+.advisors {
+  padding: 96px 0 0;
+  position: relative; }
+  .advisors h2 {
+    color: #2e5470; }
+
+.advisors__title {
+  margin-bottom: 85px; }
+  @media only screen and (max-width: 768px) {
+    .advisors__title {
+      margin: 0 auto 80px auto; } }
+  @media only screen and (max-width: 576px) {
+    .advisors__title {
+      text-align: center; } }
+
+.advisors__row {
+  margin-bottom: 90px; }
+  @media only screen and (max-width: 768px) {
+    .advisors__row {
+      margin-bottom: 0; } }
+
+.advisors__person {
+  display: flex;
+  align-items: flex-start; }
+  @media only screen and (max-width: 576px) {
+    .advisors__person {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px; } }
+
+.advisors__person-img {
+  border-radius: 50%;
+  margin-right: 30px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover; }
+  @media only screen and (max-width: 768px) {
+    .advisors__person-img {
+      margin-bottom: 100px; } }
+  @media only screen and (max-width: 576px) {
+    .advisors__person-img {
+      margin-right: 0;
+      margin-bottom: 40px; } }
+
+.advisors__person-name {
+  text-transform: capitalize;
+  color: #56bcbb;
+  font-weight: 500;
+  line-height: 1px; }
+
+.advisors__item::before {
+  content: '.';
+  width: 20px;
+  color: #2e5470;
+  display: inline-block;
+  font-size: 40px; }

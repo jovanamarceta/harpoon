@@ -1,6 +1,6 @@
 .portfolio {
 	position: relative;
-	padding: 90px 0 100px 0;
+	padding: 96px 0 100px 0;
 	&::after {
 		content: "";
 		display: block;
@@ -17,9 +17,11 @@
 	border: 1px solid $gray-300;
 	padding: 30px;
 	background: rgba(#1e2b38, .6);
+	margin-bottom: 20px;
 }
 .portfolio__heading {
 	margin: 0 auto;
+	text-align: center;
 }
 
 .portfolio__box-small {

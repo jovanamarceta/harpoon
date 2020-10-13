@@ -1,0 +1,63 @@
+.advisors {
+	padding: 96px 0 0;
+	position: relative;
+	h2 {
+		color: $blue;
+	}
+}
+
+.advisors__title {
+	margin-bottom: 85px;
+	@media only screen and (max-width: $md) {
+		margin: 0 auto 80px auto;
+	}
+	@media only screen and (max-width: $sm) {
+		text-align: center;
+	}
+}
+
+.advisors__row {
+	margin-bottom: 90px;
+	@media only screen and (max-width: $md) {
+		margin-bottom: 0;
+	}
+}
+.advisors__person {
+	display: flex;
+	align-items: flex-start;
+	@media only screen and (max-width: $sm) {
+		display: block;
+		text-align:center;
+		margin-bottom: 20px;
+	}
+}
+
+.advisors__person-img {
+	border-radius: 50%;
+	margin-right: 30px;
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	@media only screen and (max-width: $md) {
+		margin-bottom: 100px;
+	}
+	@media only screen and (max-width: $sm) {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+}
+
+.advisors__person-name {
+	text-transform: capitalize;
+	color: $color-secondary;
+	font-weight: 500;
+	line-height: 1px;
+}
+
+.advisors__item::before {
+	content: '.';
+	width: 20px;
+	color: $blue;
+	display: inline-block;
+	font-size: 40px;
+}

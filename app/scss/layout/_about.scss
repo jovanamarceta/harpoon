@@ -1,7 +1,7 @@
 
 .about {
 	position: relative;
-	padding: 90px 0 325px;
+	padding: 96px 0 296px;
 	@media only screen and (max-width: $md) {
 		padding: 90px 0 100px;
 	}
@@ -9,7 +9,11 @@
 
 .about__title,
 .about__heading {
-	color: $color-primary;
+	color: $blue;
+}
+
+.about__heading {
+	margin-bottom: 30px;
 }
 
 .about__content {
