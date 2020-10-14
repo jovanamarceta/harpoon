@@ -1,15 +1,3 @@
-/* Easy Scroll Dots --- codepenVersion --- https://easyscrolldots.primmis.com/
-* Quickly add anchor points throughout your web page/application and have navigational dots automatically appear
-* in a fixed position on the side of the page. This allows the user to click to scroll though sections of the page,
-* and it updates as they scroll.
-*
-* By Superhands89 2019 --- https://github.com/Superhands89/
-*
-* GPLv3 Licence for open source use only
-* or purchase a Single Commercial License at https://gum.co/TdtEX
-* or purchase an Extended Commercial License at https://gum.co/NGfmlw
-*/
-
 // a throttle function
 function dotsThrottle(func, wait, options) {
 	var context, args, result;
@@ -195,7 +183,6 @@ function scrollIndiClicked(indiId) {
 		}
 	}
 }
-
 
 // Init
 easyScrollDots({

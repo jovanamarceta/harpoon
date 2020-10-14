@@ -441,6 +441,9 @@ body {
 
 .about__box-left {
   max-width: 683px; }
+  @media only screen and (max-width: 768px) {
+    .about__box-left {
+      max-width: 100%; } }
 
 .about__img {
   position: absolute;
@@ -480,7 +483,9 @@ body {
         transform: scale(0.8); } }
   @media only screen and (max-width: 768px) {
     .portfolio__box {
-      padding: 10px; } }
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 10px; } }
   @media only screen and (max-width: 576px) {
     .portfolio__box {
       padding: 5px; } }

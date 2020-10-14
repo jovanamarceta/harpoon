@@ -1,5 +1,3 @@
-
-
 @each $colors-name in $site-colors {
 	$name: nth($colors-name, 1);
 	$color: nth($colors-name, 2);
