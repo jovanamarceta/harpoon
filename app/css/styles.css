@@ -477,7 +477,8 @@ body {
   .portfolio__box:hover {
     animation: all .9s ease-out;
     background: rgba(30, 43, 56, 0.6);
-    border: 1px solid #4d555c; }
+    border: 1px solid #4d555c;
+    box-shadow: 13px 10px 45px 0px #302f30; }
     @media only screen and (min-width: 992px) {
       .portfolio__box:hover {
         transform: scale(0.8); } }
@@ -603,6 +604,7 @@ body {
 
 .advisors__person-name {
   text-transform: capitalize;
+  font-family: "Futura Std", sans-serif;
   color: #56bcbb;
   font-weight: 500;
   line-height: 24px; }
