@@ -1,5 +1,5 @@
 .advisors {
-	padding: 96px 0 0;
+	padding: 72px 0 0;
 	position: relative;
 	h2 {
 		color: $blue;
@@ -13,9 +13,14 @@
 	@media only screen and (max-width: $sm) {
 		padding: 26px 0 20px;
 	}
+
+	.section-title {
+		margin: 24px 0 0;
+	}
 }
 
 .advisors__title {
+	margin: -29px 0 96px;
 	margin-bottom: 96px;
 	@media only screen and (max-width: $md) {
 		margin: 0 auto 80px auto;
@@ -34,6 +39,9 @@
 .advisors__person {
 	display: flex;
 	align-items: flex-start;
+	@media only screen and (max-width: $md) {
+		justify-content: space-around;
+	}
 	@media only screen and (max-width: $sm) {
 		display: block;
 		text-align:center;
@@ -41,19 +49,58 @@
 	}
 }
 
-.advisors__person-img {
-	border-radius: 50%;
-	margin-right: 23px;
+.container-test {
+	position: relative;
+	width: 100%;
 	width: 180px;
 	height: 180px;
 	object-fit: cover;
+	border-radius: 50%;
+	margin-right: 23px;
 	@media only screen and (max-width: $md) {
 		margin-bottom: 100px;
 	}
 	@media only screen and (max-width: $sm) {
-		margin-right: 0;
-		margin-bottom: 40px;
+		margin: 0 auto 40px auto;
 	}
+}
+
+.advisors__person-img {
+	border-radius: 50%;
+	// margin-right: 23px;
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: $blue;
+	border-radius: 50%;
+}
+
+.icon-link {
+	color: $white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	&:hover {
+		color: $white;
+	}
+}
+
+.container-test:hover .overlay {
+	opacity: 1;
 }
 
 .advisors__person-name {
@@ -74,3 +121,6 @@
 	display: inline-block;
 	font-size: 40px;
 }
+
+
+
