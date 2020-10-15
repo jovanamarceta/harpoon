@@ -1,53 +1,52 @@
-.banner {
+.hero {
 	position: relative;
-	height: 100vh;
 	padding: 50px 0 0 0;
-	z-index: -1;
+	height: 100vh;
 	&::before {
 		content: "";
-		display: block;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		position: absolute;
-		background: rgba($blue-dark, .9);
-	}
-	&::after {
-		content: "";
-		background: linear-gradient(to right top, rgba($green-dark, .5) 50%, transparent 50%);
+		background: rgba(#12202d, .9);
 		height: 100%;
 		position: absolute;
 		width: 100%;
-		z-index: 3;
 		top: 0%;
 	}
+	&::after {
+		content: '';
+		background: rgba(#203f49, .7);
+		clip-path: polygon(0 0, 0% 100%, 100% 100%);
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		top: 0;
+	}
+	
 }
 
-.banner__title {
+.hero__heading {
 	position: absolute;
 	margin: 0 auto;
 	top: 52%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	z-index: 4;
+	z-index: 100;
 }
 
-.banner__title-img {
+.hero__img {
 	width: 100%;
 }
 
-.banner__info {
+.hero__info {
 	position: absolute;
-	text-align: center;
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 10;
+	text-align: center;
+	z-index: 100;
+	font-weight: 500;
 	font-family: $font-primary;
 	&-name,
-	&-mail {
+	&-email {
 		font-size: 30px;
 		line-height: 40px;
 		@media only screen and (max-width: $sm) {
@@ -60,3 +59,4 @@
 	}
 
 }
+

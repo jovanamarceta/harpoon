@@ -16,7 +16,7 @@
 }
 
 .button-primary {
-	position: relative;
+	position: relative; 
 }
 
 .button-primary::after {
@@ -26,8 +26,8 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(45deg, $color-secondary 50%, transparent 50%);
 	z-index: -1;
+	background: linear-gradient(45deg, $color-secondary 50%, transparent 50%);
 }
 
 .button-primary,

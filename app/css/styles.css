@@ -190,8 +190,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(45deg, #56bcbb 50%, transparent 50%);
-  z-index: -1; }
+  z-index: -1;
+  background: linear-gradient(45deg, #56bcbb 50%, transparent 50%); }
 
 .button-primary,
 .button-primary:after {
@@ -307,56 +307,55 @@ body {
 .arrow-down::before {
   content: "\f107"; }
 
-.banner {
+.hero {
   position: relative;
-  height: 100vh;
-  padding: 50px 0 0 0; }
-  .banner::before {
+  padding: 50px 0 0 0;
+  height: 100vh; }
+  .hero::before {
     content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: rgba(18, 32, 45, 0.9); }
-  .banner::after {
-    content: "";
-    background: linear-gradient(to right top, rgba(32, 63, 73, 0.5) 50%, transparent 50%);
+    background: rgba(18, 32, 45, 0.9);
     height: 100%;
     position: absolute;
     width: 100%;
-    z-index: 3;
     top: 0%; }
+  .hero::after {
+    content: '';
+    background: rgba(32, 63, 73, 0.7);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0; }
 
-.banner__title {
+.hero__heading {
   position: absolute;
   margin: 0 auto;
   top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 4; }
+  z-index: 100; }
 
-.banner__title-img {
+.hero__img {
   width: 100%; }
 
-.banner__info {
+.hero__info {
   position: absolute;
-  text-align: center;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
+  text-align: center;
+  z-index: 100;
+  font-weight: 500;
   font-family: "Futura Std", sans-serif; }
-  .banner__info-name, .banner__info-mail {
+  .hero__info-name, .hero__info-email {
     font-size: 30px;
     line-height: 40px; }
     @media only screen and (max-width: 576px) {
-      .banner__info-name, .banner__info-mail {
+      .hero__info-name, .hero__info-email {
         font-size: 20px;
         line-height: 25px; } }
-  .banner__info-name {
+  .hero__info-name {
     text-transform: uppercase; }
 
 .footer {
