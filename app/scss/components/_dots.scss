@@ -24,6 +24,7 @@
 	cursor: pointer;
 	transition: background 0.4s ease;
 	will-change: transition;
+	border: 1px solid  $blue;
 }
 
 .scroll-indicator-controller > div span {
@@ -41,8 +42,8 @@
 	transform: translateX(10px);
 	transition: all 0.4s ease;
 	will-change: transition;
-	color: #464646;
-	font-weight: 600;
+	color: $black;
+	text-transform: uppercase;
 }
 
 .scroll-indicator-controller > div span:after {

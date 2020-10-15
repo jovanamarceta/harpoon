@@ -236,7 +236,8 @@ body {
   margin: 0 0 25px 0;
   cursor: pointer;
   transition: background 0.4s ease;
-  will-change: transition; }
+  will-change: transition;
+  border: 1px solid #2e5470; }
 
 .scroll-indicator-controller > div span {
   color: white;
@@ -253,8 +254,8 @@ body {
   transform: translateX(10px);
   transition: all 0.4s ease;
   will-change: transition;
-  color: #464646;
-  font-weight: 600; }
+  color: #000;
+  text-transform: uppercase; }
 
 .scroll-indicator-controller > div span:after {
   content: "-----";
@@ -478,9 +479,6 @@ body {
     background: rgba(30, 43, 56, 0.6);
     border: 1px solid #4d555c;
     box-shadow: 13px 10px 45px 0px #302f30; }
-    @media only screen and (min-width: 992px) {
-      .portfolio__box:hover {
-        transform: scale(0.8); } }
   @media only screen and (max-width: 768px) {
     .portfolio__box {
       text-align: center;
