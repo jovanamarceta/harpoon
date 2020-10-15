@@ -28,7 +28,6 @@
 }
 
 .scroll-indicator-controller > div span {
-	color: white;
 	position: absolute;
 	right: calc(100% + 8px);
 	white-space: nowrap;
@@ -43,6 +42,7 @@
 	transition: all 0.4s ease;
 	will-change: transition;
 	color: $black;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 

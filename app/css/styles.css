@@ -82,6 +82,9 @@ a:active {
   position: relative;
   z-index: 100; }
 
+.no-padding {
+  padding: 0; }
+
 @media only screen and (max-width: 768px) {
   .title-center {
     text-align: center; } }
@@ -199,6 +202,7 @@ body {
       margin: 0 auto; } }
 
 .login-btn {
+  font-family: "Futura Std", sans-serif;
   text-align: center;
   background: linear-gradient(35deg, #54bcbd 30%, rgba(0, 108, 63, 0) 31%);
   white-space: nowrap;
@@ -248,7 +252,6 @@ body {
   border: 1px solid #2e5470; }
 
 .scroll-indicator-controller > div span {
-  color: white;
   position: absolute;
   right: calc(100% + 8px);
   white-space: nowrap;
@@ -263,6 +266,7 @@ body {
   transition: all 0.4s ease;
   will-change: transition;
   color: #000;
+  font-weight: bold;
   text-transform: uppercase; }
 
 .scroll-indicator-controller > div span:after {
@@ -522,7 +526,7 @@ body {
   margin-bottom: 24px; }
 
 .advisors {
-  padding: 72px 0 0;
+  padding: 95px 0 0;
   position: relative; }
   .advisors h2 {
     color: #2e5470; }
@@ -553,6 +557,10 @@ body {
   @media only screen and (max-width: 768px) {
     .advisors__row {
       margin-bottom: 0; } }
+
+.advisors__row-text {
+  display: flex;
+  align-items: flex-end; }
 
 .advisors__person {
   display: flex;

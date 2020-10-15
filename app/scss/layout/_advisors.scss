@@ -1,5 +1,5 @@
 .advisors {
-	padding: 72px 0 0;
+	padding: 95px 0 0;
 	position: relative;
 	h2 {
 		color: $blue;
@@ -35,6 +35,11 @@
 	@media only screen and (max-width: $md) {
 		margin-bottom: 0;
 	}
+}
+
+.advisors__row-text {
+	display: flex;
+	align-items: flex-end;
 }
 .advisors__person {
 	display: flex;
