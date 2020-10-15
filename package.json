@@ -19,5 +19,8 @@
     "gulp-useref": "^4.0.1",
     "run-sequence": "^2.2.1",
     "sass-lint": "^1.13.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
   }
 }

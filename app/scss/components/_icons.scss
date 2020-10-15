@@ -13,5 +13,49 @@
 
 .arrow-down::before {
 	content: "\f107";
+	-webkit-animation: bounce 2s;
+	animation: bounce 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 }
+
+
+@-webkit-keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(40px);
+		        transform: translateY(40px);
+	}
+	60% {
+		-webkit-transform: translateY(22px);
+		        transform: translateY(22px);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(40px);
+		        transform: translateY(40px);
+	}
+	60% {
+		-webkit-transform: translateY(22px);
+		        transform: translateY(22px);
+	}
+}
+
 

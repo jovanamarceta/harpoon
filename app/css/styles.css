@@ -183,6 +183,16 @@ body {
 .container {
   max-width: 1170px; }
 
+::-webkit-scrollbar {
+  width: 15px; }
+
+::-webkit-scrollbar-track {
+  background: #1f2f3b; }
+
+::-webkit-scrollbar-thumb {
+  background: #56bcbb;
+  /* border-radius: 20px; */ }
+
 .button {
   position: relative;
   z-index: 5;
@@ -318,7 +328,41 @@ body {
   width: 27px; }
 
 .arrow-down::before {
-  content: "\f107"; }
+  content: "\f107";
+  -webkit-animation: bounce 2s;
+  animation: bounce 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  60% {
+    -webkit-transform: translateY(22px);
+    transform: translateY(22px); } }
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  60% {
+    -webkit-transform: translateY(22px);
+    transform: translateY(22px); } }
 
 .hero {
   position: relative;
