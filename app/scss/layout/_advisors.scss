@@ -40,6 +40,15 @@
 .advisors__row-text {
 	display: flex;
 	align-items: flex-end;
+	.advisors__subtitle {
+		@media only screen and (max-width: $md) {
+			display: block;
+			text-align: center;
+		}
+	}
+	@media only screen and (max-width: $sm) {
+		display: block;
+	}
 }
 .advisors__person {
 	display: flex;

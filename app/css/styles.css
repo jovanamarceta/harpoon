@@ -115,14 +115,20 @@ h3, .h3 {
   line-height: 50px;
   color: "Open Sans", Arial, sans-serif; }
 
+.section-title {
+  margin-bottom: 130px; }
+
 .section-title::after {
   content: '';
+  position: absolute;
   display: block;
   height: 4px;
-  width: 300px;
+  width: 30%;
   background-color: #56bcbb;
-  margin: 24px 0 124px; }
-  @media only screen and (max-width: 576px) {
+  left: 0;
+  margin-top: 24px;
+  z-index: 100; }
+  @media only screen and (max-width: 768px) {
     .section-title::after {
       width: 100%;
       margin-bottom: 50px; } }
@@ -206,7 +212,7 @@ body {
   .button:hover {
     background-color: #56bcbb;
     border: 2px solid transparent;
-    transition: all  .7s ease-in; }
+    transition: all  .5s ease-in; }
   @media only screen and (max-width: 768px) {
     .button {
       margin: 0 auto; } }
@@ -222,9 +228,10 @@ body {
   color: white;
   padding: 9px 71px;
   line-height: 1.5;
-  transition: all 0.5s ease;
   position: relative;
   z-index: 100; }
+  .login-btn:hover {
+    transition: all  .1s ease-in; }
 
 .button--secondary {
   padding: 12px 55px; }
@@ -519,7 +526,7 @@ body {
 .portfolio {
   position: relative;
   padding: 96px 0 56px 0; }
-  .portfolio::after {
+  .portfolio::before {
     content: "";
     display: block;
     width: 100%;
@@ -605,6 +612,13 @@ body {
 .advisors__row-text {
   display: flex;
   align-items: flex-end; }
+  @media only screen and (max-width: 768px) {
+    .advisors__row-text .advisors__subtitle {
+      display: block;
+      text-align: center; } }
+  @media only screen and (max-width: 576px) {
+    .advisors__row-text {
+      display: block; } }
 
 .advisors__person {
   display: flex;
